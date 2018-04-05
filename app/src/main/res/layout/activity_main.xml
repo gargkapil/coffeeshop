@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/coffee1"
+            android:alpha=".25"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Coffee Shop"
+        android:id="@+id/coffeeshop"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:fontFamily="cursive"
+        margin android:layout_marginTop="30dp"
+        android:layout_centerHorizontal = "true" />/>
+
+        />
+
+    <EditText
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:id = "@+id/editText"
+        android:hint = "Enter your name"
+        android:focusable = "true"
+        android:textColorHighlight = "#000"
+        android:textColorHint = "#000"
+        android:layout_marginTop = "15dp"
+        android:layout_below = "@+id/coffeeshop"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentStart = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentEnd = "true"
+        android:inputType="text"
+        android:alpha=".35"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:alpha=".35"
+        android:id="@+id/passw"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:textColorHint="#000"
+        android:hint="Enter your number" />
+
+    <TextView
+        android:id="@+id/selectcoffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select coffee"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        />
+    <CheckBox
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:layout_below="@id/selectcoffee"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:textColor="#2d2929"
+
+        android:fontFamily="serif-monospace"
+
+        />
+    <CheckBox
+        android:id="@+id/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="White"
+        android:layout_below="@id/selectcoffee"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:fontFamily="serif-monospace"
+        android:layout_marginLeft="250dp"
+
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/sugar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        android:layout_below="@id/black"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sugar1"
+        android:layout_below="@id/black"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="5dp"
+
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="place order"
+        android:background="#ce660e"
+        android:alpha="1"
+        android:layout_alignParentBottom="true"
+
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sugar1"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of cups"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25dp"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="-"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/round_button"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+           />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="+"
+
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_button"
+            android:textColor="#fff"
+
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

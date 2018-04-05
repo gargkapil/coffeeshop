@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">coffee shop</string>
+    <string-array name="cofees">
+        <item>Select Coffee</item>
+        <item>Select Coffee</item>
+        <item>Select Coffee</item>
+        <item>Select Coffee</item>
+        <item>Select Coffee</item>
+        <item>Select Coffee</item>
+
+    </string-array>
+</resources>
